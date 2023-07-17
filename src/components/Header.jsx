@@ -5,7 +5,6 @@ import moonDark from "../assets/moon-solid.svg";
 function Header({ dark, darkMode }) {
   useEffect(() => {
     let isDark = localStorage.getItem("dark") === "true";
-    console.log(isDark);
     dark(isDark);
   }, []);
 
